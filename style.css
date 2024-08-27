@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #3b9dc7;
+    max-width: 500px;
+    box-shadow: #232323 0 3px 6px;
+    border-radius: .5rem;
+    padding: 2rem;
+    color: #fefefe;
+}
+
+h2{
+    margin-bottom: 7px;
+}
+
+#form-input-container{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#form-input-container input{
+    flex: 1;
+    padding: .7rem;
+    border-radius: .3rem;
+    border: none;
+}
+
+#form-input-container button{
+    padding: .7rem;
+    border-radius: .3rem;
+    border: none;
+    background: #0a84e7;
+    margin-left: 4px;
+    min-width: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#weather-data{
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#weather-data p i{
+    font-size: 2rem;
+    margin-right: .3rem;
+}
+
+#city{
+    font-size: 2rem;
+}
+
+#temperature{
+    font-size: 4rem;
+}
+
+
+
+#country{
+    width: 35px;
+    margin-left: .2rem;
+}
+
+#city-container{
+    border: none;
+    box-shadow: #232323 0px 3px 8px;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#rest-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#description-container{
+    border: none;
+    box-shadow: #232323 0px 3px 8px;
+    border-radius: .5rem;
+    text-align: center;
+    padding: .8rem;
+}
+
+#description{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+#details-container{
+    display: flex;
+    gap: 1rem;
+}
+
+#humidity{
+        border: none;
+        box-shadow: #232323 0px 3px 8px;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        text-align: center;
+}
+
+
+#wind{
+        border: none;
+        box-shadow: #232323 0px 3px 8px;
+        border-radius: .5rem;
+        padding: 1.5rem;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#error-message{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #fff;
+}
+
+
+@media(max-width: 425px){
+    .container{
+        width: 300px;
+    }
+    #rest-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #description{
+        display: flex;
+        justify-content: space-around;
+    }
+    #humidity{
+        width: 130px;
+        text-align: center;
+    }
+    #wind{
+        width: 130px;
+    }
+}
+
+#loader{
+    animation: rotate 1.2s ease infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
