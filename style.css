@@ -158,13 +158,3 @@ h2{
         width: 130px;
     }
 }
-
-#loader{
-    animation: rotate 1.2s ease infinite;
-}
-
-@keyframes rotate{
-    to{
-        transform: rotate(360deg);
-    }
-}
